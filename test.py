@@ -18,8 +18,7 @@ new_lst2 = [2, 3]
 print(find_minimun(new_lst1, new_lst2))
 
 #-------------
-# לעבור כל תו במחזרות ולא האם זהה?
-# אם לא זהה להחזיר טעות
+
 def if_all_letter_are_the_same (letters):
     for i in range(len(letters)-1):
         if letters[i] != letters[i+1]:
@@ -40,7 +39,6 @@ print(if_all_letter_are_the_same("dsaf"))
 print(if_all_letter_are_the_same('aa'))
 
 #------------------
-# לעבור ציון, ציון ולמצוא את הציון הגבוהה ביותר, לאחר מכן לקשר אותו לסטודנט
 def max_grade_of_students (grades, students):
     maxi = grades[0]
     for i in range(len(grades)):
@@ -56,8 +54,6 @@ grades = [80, 10, 90, 92]
 students = ['moshe', 'jakov', 'omer', 'idan']
 print(max_grade_of_students(grades, students))
 
-#-------------
-# לעבור ציון, ציון ברשימה ולראות מי שקיבל מעל 60. מי שקיבל מעל יקבל פקטור
 
 def factor_grades (grades):
     factor = 5
@@ -69,7 +65,7 @@ grades = [10,60,70]
 print(factor_grades(grades))
 
 #---------------
-# אני, צריך לעבור בלולאה עם אינדקסים על התווים ולראות שהם זהים,, במידה והם זהים אחזיר נכון, אחרת לא נכון
+
 def k_indetical_letters (rep_str, k):
    for i in range(len(rep_str)-k):
        kLetters = rep_str[i: i+k]
